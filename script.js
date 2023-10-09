@@ -40,7 +40,7 @@ const animateCallback = (entries, observer) => {
 
 // Create a single observer
 const observer = new IntersectionObserver(animateCallback, {
-  threshold: 0.4,
+  threshold: 1,
 });
 
 // Observe sections
