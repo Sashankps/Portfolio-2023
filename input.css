@@ -195,30 +195,6 @@
   @apply absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-white;
 }
 
-/* Define custom delays */
-.custom-delay-1 {
-  --animate-delay: 0.1s; /* This element will have a 1-second delay */
-}
-
-.custom-delay-2 {
-  --animate-delay: 0.3s; /* This element will have a 1-second delay */
-}
-.custom-delay-3 {
-  --animate-delay: 0.5s; /* This element will have a 1-second delay */
-}
-.custom-delay-4 {
-  --animate-delay: 0.7s; /* This element will have a 1-second delay */
-}
-.custom-delay-5 {
-  --animate-delay: 0.9s; /* This element will have a 1-second delay */
-}
-.custom-delay-6 {
-  --animate-delay: 1s; /* This element will have a 1-second delay */
-}
-.custom-delay-7 {
-  --animate-delay: 1.5s; /* This element will have a 1-second delay */
-}
-
 /* Hide only the horizontal scrollbar */
 #about {
   overflow-x: hidden;
