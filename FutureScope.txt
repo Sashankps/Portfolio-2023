@@ -1,0 +1,1 @@
+1. When a project is hovered over, hiding other projects and a dialogue box showing the details of the selected project. 
