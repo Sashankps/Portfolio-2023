@@ -8,4 +8,5 @@ module.exports = {
     plugins: [],
     darkMode: 'media',
   },
+  plugins: [require('daisyui')],
 };

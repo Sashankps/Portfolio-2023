@@ -8,9 +8,6 @@ card.addEventListener('mouseleave', () => {
   card.querySelector('p').classList.add('translate-y-full');
 });
 
-//User interaction animations using animate css
-// Select elements
-// Get section and animated elements
 // const sections = [
 //   document.querySelector('#about'),
 //   document.querySelector('#projects'),
@@ -19,7 +16,6 @@ card.addEventListener('mouseleave', () => {
 // ];
 // const animatedEls = document.querySelectorAll('[data-animate]');
 
-// // Callback for both section and elements
 // const animateCallback = (entries, observer) => {
 //   entries.forEach((entry) => {
 //     const isSection = sections.includes(entry.target);
@@ -38,17 +34,14 @@ card.addEventListener('mouseleave', () => {
 //   });
 // };
 
-// // Create a single observer
 // const observer = new IntersectionObserver(animateCallback, {
 //   threshold: 0.5,
 // });
 
-// // Observe sections
 // sections.forEach((section) => {
 //   observer.observe(section);
 // });
 
-// // Observe animated elements
 // animatedEls.forEach((el) => {
 //   observer.observe(el);
 // });
