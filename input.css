@@ -10,6 +10,7 @@
   background-blend-mode: multiply;
 } */
 
+
 /* === removing default button style ===*/
 .button {
   margin: 0;
@@ -195,7 +196,8 @@
   @apply absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-white;
 }
 
-/* Hide only the horizontal scrollbar */
 #about {
   overflow-x: hidden;
 }
+
+

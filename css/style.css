@@ -1733,6 +1733,11 @@ html {
   background-blend-mode: multiply;
 } */
 
+body {
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 76%,#002244 100%);
+}
+
 /* === removing default button style ===*/
 
 .button {
@@ -1946,8 +1951,6 @@ html {
   }
 }
 
-/* Hide only the horizontal scrollbar */
-
 #about {
   overflow-x: hidden;
 }
@@ -2140,6 +2143,10 @@ html {
     margin-left: 0px;
   }
 
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .lg\:mt-20 {
     margin-top: 5rem;
   }
@@ -2213,3 +2220,5 @@ html {
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 }
+
+
