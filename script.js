@@ -45,3 +45,5 @@ card.addEventListener('mouseleave', () => {
 // animatedEls.forEach((el) => {
 //   observer.observe(el);
 // });
+
+console.log('Hey, Welcome!')
