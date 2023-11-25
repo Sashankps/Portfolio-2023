@@ -47,3 +47,14 @@ card.addEventListener('mouseleave', () => {
 // });
 
 console.log('Hey, Welcome!')
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Load More functionality
+  const loadMoreButton = document.getElementById("load-more-button");
+  const hiddenProject = document.getElementById("project-9");
+
+  loadMoreButton.addEventListener("click", function () {
+    hiddenProject.classList.toggle("hidden");
+    loadMoreButton.style.display = "none";
+  });
+});
