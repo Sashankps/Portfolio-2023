@@ -1,1011 +1,714 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" href="./public/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <title>Sashank Pilli | Full Stack Web Dev</title>
-  </head>
-  <body class="bg-gradient-to-r from-slate-950 to-black">
-    <!-- Nav bar  -->
-    <section id="home" class="">
-      <nav class="">
-        <div
-          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 animate__animated custom-delay-2"
-        >
-          <button data-text="Awesome" class="button flex items-center">
-            <span class="actual-text">&nbsp;Sashank&nbsp;</span>
-            <span class="hover-text" aria-hidden="true">
-              &nbsp;Sashank&nbsp;
-            </span>
-          </button>
-          <button
-            data-collapse-toggle="navbar-default"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-default"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul
-              class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0"
-            >
-              <li>
-                <a
-                  href="#home"
-                  class="block py-2 pl-3 pr-4 text-xl text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                  aria-current="page"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  class="block py-2 pl-3 pr-4 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#projects"
-                  class="block py-2 pl-3 pr-4 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >Projects</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#skills"
-                  class="block py-2 pl-3 pr-4 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >Skills</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  class="block py-2 pl-3 pr-4 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- Hero page  -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="./public/favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
 
-      <div class="text-white lg:mt-40 lg:mb-24">
-        <!-- hero content -->
-        <div
-          class="flex flex-col-reverse container items-center justify-between md:mb-0 mx-auto p-6 lg:flex-row"
-        >
-          <div
-            class="flex flex-col items-center text-center space-y-4 max-w-xl lg:mb-40 md:ml-24 lg:mt-20 p-1 animate__animated custom-delay-4"
-          >
-            <p class="text-center font-sans text-6xl font-bold">
-              Hi, I'm <span class="text-green-400">Sashank</span>
-            </p>
-            <p
-              class="text-center font-bold md:text-center md:text-4xl text-3xl mb-10"
-            >
-              Full stack developer
-            </p>
-            <!-- Two buttons here, download cv and contact -->
-            <!-- Download cv button  -->
-            <button class="buttoncv">
-              <a href="./public/Sashank's Resume.pdf" download>Download CV</a>
-            </button>
-            <div class="social-buttons md:mt-20">
-              <a
-                href="https://www.linkedin.com/in/sashank-p-70b633131/"
-                target="_blank"
-                class="social-button linkedin"
-              >
-                <svg
-                  viewBox="0 -2 44 44"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <g id="Icons" stroke="none" stroke-width="1">
-                    <g transform="translate(-702.000000, -265.000000)">
-                      <path
-                        d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z"
-                        id="LinkedIn"
-                      ></path>
-                    </g>
-                  </g>
-                </svg>
-              </a>
-              <a
-                href="https://github.com/Sashankps?tab=repositories"
-                target="_blank"
-                class="social-button github"
-              >
-                <svg
-                  class="cf-icon-svg _block"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="-2.5 0 19 19"
-                >
-                  <path
-                    d="M9.464 17.178a4.506 4.506 0 0 1-2.013.317 4.29 4.29 0 0 1-2.007-.317.746.746 0 0 1-.277-.587c0-.22-.008-.798-.012-1.567-2.564.557-3.125-1.236-3.125-1.236a2.44 2.44 0 0 0-1.024-1.348c-.836-.572.063-.56.063-.56a1.937 1.937 0 0 1 1.412.95 1.962 1.962 0 0 0 2.682.765 1.971 1.971 0 0 1 .586-1.233c-2.046-.232-4.198-1.023-4.198-4.554a3.566 3.566 0 0 1 .948-2.474 3.313 3.313 0 0 1 .091-2.438s.773-.248 2.534.945a8.727 8.727 0 0 1 4.615 0c1.76-1.193 2.532-.945 2.532-.945a3.31 3.31 0 0 1 .092 2.438 3.562 3.562 0 0 1 .947 2.474c0 3.54-2.155 4.32-4.208 4.548a2.195 2.195 0 0 1 .625 1.706c0 1.232-.011 2.227-.011 2.529a.694.694 0 0 1-.272.587z"
-                  ></path>
-                </svg>
-              </a>
-              <a
-                href="https://www.instagram.com/lookatsashi/"
-                class="social-button instagram"
-                target="_blank"
-              >
-                <svg
-                  width="800px"
-                  height="800px"
-                  viewBox="0 0 20 20"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <g id="Page-1" stroke="none" stroke-width="1">
-                    <g
-                      id="Dribbble-Light-Preview"
-                      transform="translate(-340.000000, -7439.000000)"
-                    >
-                      <g
-                        id="icons"
-                        transform="translate(56.000000, 160.000000)"
-                      >
-                        <path
-                          d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"
-                          id="instagram-[#167]"
-                        ></path>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div
-            class="mb-24 md:w-180 md:ml-24 lg:w-1/3 animate__animated custom-delay-3"
-          >
-            <img src="./public/dev-ed-wave.png" alt="" />
-          </div>
+  <title>Sashank Pilli | Full Stack Web Dev</title>
+</head>
+
+<body class="bg-gradient-to-r from-slate-950 to-black">
+  <!-- Nav bar  -->
+  <section id="home" class="">
+    <nav class="">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 animate__animated custom-delay-2">
+        <button data-text="Awesome" class="button flex items-center">
+          <span class="actual-text">&nbsp;Sashank&nbsp;</span>
+          <span class="hover-text" aria-hidden="true">
+            &nbsp;Sashank&nbsp;
+          </span>
+        </button>
+        <button data-collapse-toggle="navbar-default" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+            <li>
+              <a href="#home"
+                class="block py-2 pl-3 pr-4 text-xl text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#about"
+                class="block py-2 pl-3 pr-4 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+            </li>
+            <li>
+              <a href="#projects"
+                class="block py-2 pl-3 pr-4 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+            </li>
+            <li>
+              <a href="#skills"
+                class="block py-2 pl-3 pr-4 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Skills</a>
+            </li>
+            <li>
+              <a href="#contact"
+                class="block py-2 pl-3 pr-4 text-xl text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </nav>
+    <!-- Hero page  -->
 
-    <!-- About me  -->
-
-    <section id="about" class="border-white">
-      <div
-        class="container max-w-7xl mt-12 mx-auto lg:mb-44 mb-40 text-white px-6 lg:px-8 py-4 border-white"
-      >
-        <div class="grid lg:grid-cols-2 grid-cols-1 space-y-9 lg:space-y-0">
-          <h2
-            class="border-white text-5xl font-bold lg:pt-48 text-center lg:text-left animate__animated"
-          >
-            About <span class="text-green-400">me</span>
-          </h2>
-          <p
-            class="text-left lg:text-left text-base ml-4 lg:ml-0 lg:text-lg p-4 animate__animated"
-          >
-            I am a Full Stack Developer with a background of over 2 years in the
-            field. My passion lies in crafting robust and efficient web
-            applications that not only look great but also provide exceptional
-            user experiences. My journey as a developer has equipped me with a
-            diverse skill set, enabling me to handle both frontend and backend
-            development seamlessly.
-            <br /><br />
-            I thrive on challenges and am dedicated to staying updated with the
-            latest technologies and industry trends. This allows me to deliver
-            cutting-edge solutions to my clients. I am well-versed in a variety
-            of programming languages, frameworks, and tools, which empowers me
-            to create feature-rich and scalable applications.
-
-            <br /><br />
-            As a Full Stack Developer, I am committed to delivering high-quality
-            software solutions that not only meet but exceed the expectations of
-            my clients. I am excited to take on new challenges and contribute to
-            the success of future projects.
+    <div class="text-white lg:mt-40 lg:mb-24">
+      <!-- hero content -->
+      <div class="flex flex-col-reverse container items-center justify-between md:mb-0 mx-auto p-6 lg:flex-row">
+        <div
+          class="flex flex-col items-center text-center space-y-4 max-w-xl lg:mb-40 md:ml-24 lg:mt-20 p-1 animate__animated custom-delay-4">
+          <p class="text-center font-sans text-6xl font-bold">
+            Hi, I'm <span class="text-green-400">Sashank</span>
           </p>
+          <p class="text-center font-bold md:text-center md:text-4xl text-3xl mb-10">
+            Full stack developer
+          </p>
+          <!-- Two buttons here, download cv and contact -->
+          <!-- Download cv button  -->
+          <button class="buttoncv">
+            <a href="./public/Sashank's Resume.pdf" download>Download CV</a>
+          </button>
+          <div class="social-buttons md:mt-20">
+            <a href="https://www.linkedin.com/in/sashank-p-70b633131/" target="_blank" class="social-button linkedin">
+              <svg viewBox="0 -2 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Icons" stroke="none" stroke-width="1">
+                  <g transform="translate(-702.000000, -265.000000)">
+                    <path
+                      d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z"
+                      id="LinkedIn"></path>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <a href="https://github.com/Sashankps?tab=repositories" target="_blank" class="social-button github">
+              <svg class="cf-icon-svg _block" xmlns="http://www.w3.org/2000/svg" viewBox="-2.5 0 19 19">
+                <path
+                  d="M9.464 17.178a4.506 4.506 0 0 1-2.013.317 4.29 4.29 0 0 1-2.007-.317.746.746 0 0 1-.277-.587c0-.22-.008-.798-.012-1.567-2.564.557-3.125-1.236-3.125-1.236a2.44 2.44 0 0 0-1.024-1.348c-.836-.572.063-.56.063-.56a1.937 1.937 0 0 1 1.412.95 1.962 1.962 0 0 0 2.682.765 1.971 1.971 0 0 1 .586-1.233c-2.046-.232-4.198-1.023-4.198-4.554a3.566 3.566 0 0 1 .948-2.474 3.313 3.313 0 0 1 .091-2.438s.773-.248 2.534.945a8.727 8.727 0 0 1 4.615 0c1.76-1.193 2.532-.945 2.532-.945a3.31 3.31 0 0 1 .092 2.438 3.562 3.562 0 0 1 .947 2.474c0 3.54-2.155 4.32-4.208 4.548a2.195 2.195 0 0 1 .625 1.706c0 1.232-.011 2.227-.011 2.529a.694.694 0 0 1-.272.587z">
+                </path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/lookatsashi/" class="social-button instagram" target="_blank">
+              <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1">
+                  <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)">
+                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                      <path
+                        d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"
+                        id="instagram-[#167]"></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="mb-24 md:w-180 md:ml-24 lg:w-1/3 animate__animated custom-delay-3">
+          <img src="./public/dev-ed-wave.png" alt="" />
         </div>
       </div>
-    </section>
-
-    <!-- Projects -->
-
-    <section id="projects" class="md:mb-36 border-white">
-      <div class="max-w-6xl mx-auto px-6 text-gray-900 md:px-0 space-y-4">
-        <div
-          class="text-center mx-auto container font-bold text-5xl text-green-400 mb-24 md:mt-20 max-w-6xl md:px-0 decoration-green-400 decoration-4 animate__animated"
-        >
-          Projects
-        </div>
-        <div
-          class="grid grid-cols-1 gap-8 w-full mt-12 text-2xl space-y-3 lg:space-y-0 text-white uppercase md:grid md:grid-cols-4 animate__animated"
-        >
-          <!-- 1st proj -->
-
-          <a
-            href="https://github.com/Sashankps/noob-app/"
-            target="_blank"
-            class="group relative animate__animated"
-          >
-            <img
-              src="./public/Recipebook.jpg"
-              alt=""
-              class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50"
-            />
-            <img
-              src="./public/Recipebook.jpg"
-              alt=""
-              class="w-full h-40 object-cover md:hidden"
-            />
-            <div
-              class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/4 lg:group-hover:opacity-100"
-            >
-              <h2
-                class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl uppercase"
-              >
-                Recipe Book
-              </h2>
-
-              <div class="border-b border-gray-200"></div>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                Users can choose from a wide range of recipes available...
-              </p>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                <span class="font-bold">Techstack</span> : Angular, Typescript,
-                Bootstrap
-              </p>
-            </div>
-            <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
-              Recipe Book
-            </h5>
-          </a>
-
-          <!-- 2nd proj -->
-
-          <a
-            href="https://github.com/Sashankps/DatingApp"
-            target="_blank"
-            class="group relative animate__animated custom-delay-1"
-          >
-            <img
-              src="./public/dating-app.jpg"
-              alt=""
-              class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50"
-            />
-            <img
-              src="./public/dating-app.jpg"
-              alt=""
-              class="w-full h-40 object-cover md:hidden"
-            />
-
-            <div
-              class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/3 lg:group-hover:opacity-100"
-            >
-              <h2
-                class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl"
-              >
-                Dating App
-              </h2>
-
-              <div class="border-b border-gray-200"></div>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                A platform for people connect...
-              </p>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                stack : Angular, Typescript, C#, EntityFramework
-              </p>
-            </div>
-
-            <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
-              Dating App
-            </h5>
-          </a>
-
-          <a
-            href="https://fast-pizza-ps.vercel.app/"
-            target="_blank"
-            class="group relative animate__animated custom-delay-1"
-          >
-            <img
-              src="./public/fast-pizza.jpg"
-              alt=""
-              class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50"
-            />
-            <img
-              src="./public/fast-pizza.jpg"
-              alt=""
-              class="w-full h-40 object-cover md:hidden"
-            />
-
-            <div
-              class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/3 lg:group-hover:opacity-100"
-            >
-              <h2
-                class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl"
-              >
-                Fast Pizza
-              </h2>
-
-              <div class="border-b border-gray-200"></div>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                Experience seamless pizza ordering with my React.js-powered
-                website
-              </p>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                stack : ReactJs, TailwindCSS
-              </p>
-            </div>
-
-            <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
-              Fast Pizza
-            </h5>
-          </a>
-
-          <!-- 3rd proj -->
-
-          <a
-            href="https://mern-auth-gqwt.onrender.com/"
-            target="_blank"
-            class="group relative animate__animated custom-delay-4"
-          >
-            <img
-              src="./public/mern-auth.jpg"
-              alt=""
-              class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50"
-            />
-            <img
-              src="./public/mern-auth.jpg"
-              alt=""
-              class="w-full h-40 object-cover md:hidden"
-            />
-
-            <div
-              class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/4 lg:group-hover:opacity-100"
-            >
-              <h2
-                class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl"
-              >
-                Backend Auth
-              </h2>
-
-              <div class="border-b border-gray-200"></div>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                A MERN built authentication app
-              </p>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                stack : ReactJs, NodeJs, ExpressJs, MongoDB
-              </p>
-            </div>
-
-            <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
-              Authenticator
-            </h5>
-          </a>
-
-          <!-- 4th Project -->
-
-          <a
-            href="https://react-quiz-ps.netlify.app/"
-            target="_blank"
-            class="group relative animate__animated custom-delay-4"
-          >
-            <img
-              src="./public/react-quiz.jpg"
-              alt=""
-              class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50"
-            />
-            <img
-              src="./public/react-quiz.jpg"
-              alt=""
-              class="w-full h-40 object-cover md:hidden"
-            />
-
-            <div
-              class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/3 lg:group-hover:opacity-100"
-            >
-              <h2
-                class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl"
-              >
-                React-quiz
-              </h2>
-
-              <div class="border-b border-gray-200"></div>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                A robust quiz app
-              </p>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                stack : ReactJs,
-              </p>
-            </div>
-
-            <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
-              React-quiz
-            </h5>
-          </a>
-
-          <!-- 5th project -->
-          <a
-            href="https://clipboard-ps.netlify.app/"
-            target="_blank"
-            class="group relative animate__animated custom-delay-4"
-          >
-            <img
-              src="./public/clipboard.jpg"
-              alt=""
-              class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50"
-            />
-            <img
-              src="./public/clipboard.jpg"
-              alt=""
-              class="w-full h-40 object-cover md:hidden"
-            />
-
-            <div
-              class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/3 lg:group-hover:opacity-100"
-            >
-              <h2
-                class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl"
-              >
-                Clipboard
-              </h2>
-
-              <div class="border-b border-gray-200"></div>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                A beatiful landing page...
-              </p>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                stack : HTML, TailwindCSS, Javascript
-              </p>
-            </div>
-
-            <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
-              Clipboard
-            </h5>
-          </a>
-
-          <!-- 6th proj -->
-
-          <a
-            href="https://loopstudios-ps.netlify.app/"
-            target="_blank"
-            class="group relative animate__animated custom-delay-5"
-          >
-            <img
-              src="./public/loopstudios.jpg"
-              alt=""
-              class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50"
-            />
-            <img
-              src="./public/loopstudios.jpg"
-              alt=""
-              class="w-full h-40 object-cover md:hidden"
-            />
-
-            <div
-              class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/3 lg:group-hover:opacity-100"
-            >
-              <h2
-                class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl"
-              >
-                LoopStudios
-              </h2>
-
-              <div class="border-b border-gray-200"></div>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                An eye appealing demo of VR
-              </p>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                stack : HTML, TailwindCSS, Javascript
-              </p>
-            </div>
-
-            <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
-              Loopstudios
-            </h5>
-          </a>
-
-          <!-- 5th proj -->
-
-          <a
-            href="https://shortly-ps.netlify.app/"
-            class="group relative animate__animated custom-delay-6"
-            target="_blank"
-          >
-            <img
-              src="./public/shortly.jpg"
-              alt=""
-              class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50"
-            />
-            <img
-              src="./public/shortly.jpg"
-              alt=""
-              class="w-full h-40 object-cover md:hidden"
-            />
-
-            <div
-              class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/3 lg:group-hover:opacity-100"
-            >
-              <h2
-                class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl"
-              >
-                Shortly
-              </h2>
-
-              <div class="border-b border-gray-200"></div>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                An aesthetic landing page of the brand...
-              </p>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                Stack : HTML, TailwindCSS, Javascript
-              </p>
-            </div>
-
-            <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
-              Shortly
-            </h5>
-          </a>
-
-          <!-- 6th Project -->
-
-          <a
-            href="https://github.com/Sashankps/TaskManager/"
-            target="_blank"
-            class="group relative animate__animated custom-delay-4"
-          >
-            <img
-              src="./public/task-manager-app-.jpg"
-              alt=""
-              class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50"
-            />
-            <img
-              src="./public/task-manager-app-.jpg"
-              alt=""
-              class="w-full h-40 object-cover md:hidden"
-            />
-
-            <div
-              class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/4 lg:group-hover:opacity-100"
-            >
-              <h2
-                class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl"
-              >
-                TaskManager
-              </h2>
-
-              <div class="border-b border-gray-200"></div>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                Manage your daily and upcoming tasks...
-              </p>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                stack : Asp.Net Core MVC, C#, Sql Server, Bootstrap
-              </p>
-            </div>
-
-            <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
-              Task Manager
-            </h5>
-          </a>
-
-          <!-- 7th Project -->
-
-          <a
-            href="https://github.com/Sashankps/TaskManager/tree/master/ExpenseTracker"
-            target="_blank"
-            class="group relative animate__animated custom-delay-4"
-          >
-            <img
-              src="./public/expense-tracker-app-logo-with-expenses.jpg"
-              alt=""
-              class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50"
-            />
-            <img
-              src="./public/expense-tracker-app-logo-with-expenses.jpg"
-              alt=""
-              class="w-full h-40 object-cover md:hidden"
-            />
-
-            <div
-              class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/4 lg:group-hover:opacity-100"
-            >
-              <h2
-                class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl"
-              >
-                Expense Tracker
-              </h2>
-
-              <div class="border-b border-gray-200"></div>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                Track your daily expenses
-              </p>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                stack : Asp.Net Core MVC, C#, Sql Server, Bootstrap
-              </p>
-            </div>
-
-            <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
-              Expense Tracker
-            </h5>
-          </a>
-
-          <!-- 8th Project -->
-
-          <a
-            href="https://github.com/Sashankps/node-weather_website/"
-            target="_blank"
-            class="group relative animate__animated custom-delay-4"
-          >
-            <img
-              src="./public/weather-app-icon-.jpg"
-              alt=""
-              class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50"
-            />
-            <img
-              src="./public/weather-app-icon-.jpg"
-              alt=""
-              class="w-full h-40 object-cover md:hidden"
-            />
-
-            <div
-              class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/3 lg:group-hover:opacity-100"
-            >
-              <h2
-                class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl"
-              >
-                Weather API
-              </h2>
-
-              <div class="border-b border-gray-200"></div>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                Retrieves real time weather forecast
-              </p>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                stack : NodeJs, ExpressJs
-              </p>
-            </div>
-
-            <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
-              Weather API
-            </h5>
-          </a>
-
-          <!-- 9th Project -->
-
-          <a
-            href="https://github.com/Sashankps/redux-bank"
-            target="_blank"
-            class="group relative animate__animated custom-delay-2"
-          >
-            <img
-              src="./public/redux-bank.jpg"
-              alt=""
-              class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50"
-            />
-            <img
-              src="./public/redux-bank.jpg"
-              alt=""
-              class="w-full h-40 object-cover md:hidden"
-            />
-
-            <div
-              class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/4 lg:group-hover:opacity-100"
-            >
-              <h2
-                class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl"
-              >
-                Virtual Bank
-              </h2>
-
-              <div class="border-b border-gray-200"></div>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                An app that acts as a dispatcher to manage your money in the
-                bank
-              </p>
-
-              <p class="text-sm transition-colors duration-300 delay-150 mt-4">
-                stack : ReactJS, Redux
-              </p>
-            </div>
-
-            <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
-              Virtual Bank
-            </h5>
-          </a>
-        </div>
+    </div>
+  </section>
+
+  <!-- About me  -->
+
+  <section id="about" class="border-white">
+    <div class="container max-w-7xl mt-12 mx-auto lg:mb-44 mb-40 text-white px-6 lg:px-8 py-4 border-white">
+      <div class="grid lg:grid-cols-2 grid-cols-1 space-y-9 lg:space-y-0">
+        <h2 class="border-white text-5xl font-bold lg:pt-48 text-center lg:text-left animate__animated">
+          About <span class="text-green-400">me</span>
+        </h2>
+        <p class="text-left lg:text-left text-base ml-4 lg:ml-0 lg:text-lg p-4 animate__animated">
+          I am a Full Stack Developer with a background of over 2 years in the
+          field. My passion lies in crafting robust and efficient web
+          applications that not only look great but also provide exceptional
+          user experiences. My journey as a developer has equipped me with a
+          diverse skill set, enabling me to handle both frontend and backend
+          development seamlessly.
+          <br /><br />
+          I thrive on challenges and am dedicated to staying updated with the
+          latest technologies and industry trends. This allows me to deliver
+          cutting-edge solutions to my clients. I am well-versed in a variety
+          of programming languages, frameworks, and tools, which empowers me
+          to create feature-rich and scalable applications.
+
+          <br /><br />
+          As a Full Stack Developer, I am committed to delivering high-quality
+          software solutions that not only meet but exceed the expectations of
+          my clients. I am excited to take on new challenges and contribute to
+          the success of future projects.
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="skills" class="mt-28 mb-28 backdrop-blur-sm">
+  <!-- Projects -->
+
+  <section id="projects" class="md:mb-36 border-white">
+    <div class="max-w-6xl mx-auto px-6 text-gray-900 md:px-0 space-y-4">
       <div
-        class="text-center mx-auto container mt-40 mb-10 font-bold text-5xl text-green-400 md:mt-20 max-w-6xl px-6 md:px-0 decoration-green-400 decoration-4 animate__animated custom-delay-3"
-      >
-        Skills
+        class="text-center mx-auto container font-bold text-5xl text-green-400 mb-24 md:mt-20 max-w-6xl md:px-0 decoration-green-400 decoration-4 animate__animated">
+        Projects
       </div>
-      <div class="grid lg:grid-cols-2 container mx-auto max-w-6xl">
-        <div class="flex flex-col">
-          <h2
-            class="text-2xl text-center font-bold mt-8 text-white animate__animated custom-delay-3"
-          >
-            Frontend
-          </h2>
+      <div
+        class="grid grid-cols-1 gap-8 w-full mt-12 text-2xl space-y-3 lg:space-y-0 text-white uppercase md:grid md:grid-cols-4 animate__animated">
+        <!-- 1st proj -->
+
+        <a href="https://github.com/Sashankps/noob-app/" target="_blank" class="group relative animate__animated">
+          <img src="./public/Recipebook.jpg" alt=""
+            class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50" />
+          <img src="./public/Recipebook.jpg" alt="" class="w-full h-40 object-cover md:hidden" />
           <div
-            class="group flex flex-wrap mx-auto justify-center gap-4 py-4 animate__animated"
-          >
-            <div
-              class="border border-solid border-blue-500 text-white font-bold rounded-lg p-2 hover:scale-105 cursor-pointer animate__animated custom-delay-4"
-            >
-              HTML
-            </div>
-            <div
-              class="border border-solid border-red-500 text-white font-bold rounded-lg px-2 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-4"
-            >
-              CSS
-            </div>
-            <div
-              class="border border-solid border-purple-500 text-white font-bold rounded-lg px-2 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-4"
-            >
-              Angular
-            </div>
-            <div
-              class="border border-solid border-blue-400 text-white font-bold rounded-lg px-2 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-4"
-            >
-              React Js
-            </div>
-            <div
-              class="border border-solid border-pink-500 text-white font-bold rounded-lg px-2 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-4"
-            >
-              ASP.NET Core MVC
-            </div>
-            <div
-              class="border border-solid border-teal-500 text-white font-bold rounded-lg px-2 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-4"
-            >
-              Tailwind
-            </div>
-            <div
-              class="border border-solid border-orange-500 text-white font-bold rounded-lg px-2 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-4"
-            >
+            class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/4 lg:group-hover:opacity-100">
+            <h2 class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl uppercase">
+              Recipe Book
+            </h2>
+
+            <div class="border-b border-gray-200"></div>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              Users can choose from a wide range of recipes available...
+            </p>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              <span class="font-bold">Techstack</span> : Angular, Typescript,
               Bootstrap
-            </div>
+            </p>
           </div>
-        </div>
-        <div class="flex flex-col">
-          <h2
-            class="text-2xl font-bold text-center mt-8 text-white animate__animated custom-delay-4"
-          >
-            Backend
-          </h2>
-          <div class="flex flex-wrap justify-center gap-4 py-4">
-            <div
-              class="border border-solid border-blue-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5"
-            >
-              Java
-            </div>
-            <div
-              class="border border-solid border-blue-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5"
-            >
-              Javascript
-            </div>
-            <div
-              class="border border-solid border-blue-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5"
-            >
-              Typescript
-            </div>
-            <div
-              class="border border-solid border-blue-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5"
-            >
-              Go
-            </div>
-            <div
-              class="border border-solid border-red-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5"
-            >
-              C#
-            </div>
-            <div
-              class="border border-solid border-red-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5"
-            >
-              Python
-            </div>
-            <div
-              class="border border-solid border-yellow-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5"
-            >
-              REST APIs
-            </div>
-            <div
-              class="border border-solid border-purple-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5"
-            >
-              Node JS
-            </div>
-            <div
-              class="border border-solid border-green-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5"
-            >
-              Express JS
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col lg:mt-10">
-          <h2
-            class="text-2xl font-bold text-center mt-8 text-white animate__animated custom-delay-5"
-          >
-            Database
-          </h2>
-          <div class="flex flex-wrap justify-center gap-4 py-4">
-            <div
-              class="border border-solid border-blue-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-6"
-            >
-              PostgreSQL
-            </div>
-            <div
-              class="border border-solid border-red-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-6"
-            >
-              Entity Framework Core
-            </div>
-            <div
-              class="border border-solid border-yellow-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-6"
-            >
-              MongoDB
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col lg:mt-10">
-          <h2
-            class="text-2xl font-bold text-center mt-8 text-white animate__animated custom-delay-5"
-          >
-            Others
-          </h2>
-          <div class="flex flex-wrap justify-center gap-4 py-4">
-            <div
-              class="border border-solid border-blue-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-6"
-            >
-              Azure
-            </div>
-            <div
-              class="border border-solid border-red-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-6"
-            >
-              Docker
-            </div>
+          <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
+            Recipe Book
+          </h5>
+        </a>
 
+        <!-- 2nd proj -->
+
+        <a href="https://github.com/Sashankps/DatingApp" target="_blank"
+          class="group relative animate__animated custom-delay-1">
+          <img src="./public/dating-app.jpg" alt=""
+            class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50" />
+          <img src="./public/dating-app.jpg" alt="" class="w-full h-40 object-cover md:hidden" />
+
+          <div
+            class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/3 lg:group-hover:opacity-100">
+            <h2 class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl">
+              Dating App
+            </h2>
+
+            <div class="border-b border-gray-200"></div>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              A platform for people connect...
+            </p>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              stack : Angular, Typescript, C#, EntityFramework
+            </p>
+          </div>
+
+          <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
+            Dating App
+          </h5>
+        </a>
+
+        <a href="https://fast-pizza-ps.vercel.app/" target="_blank"
+          class="group relative animate__animated custom-delay-1">
+          <img src="./public/fast-pizza.jpg" alt=""
+            class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50" />
+          <img src="./public/fast-pizza.jpg" alt="" class="w-full h-40 object-cover md:hidden" />
+
+          <div
+            class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/3 lg:group-hover:opacity-100">
+            <h2 class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl">
+              Fast Pizza
+            </h2>
+
+            <div class="border-b border-gray-200"></div>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              Experience seamless pizza ordering with my React.js-powered
+              website
+            </p>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              stack : ReactJs, TailwindCSS
+            </p>
+          </div>
+
+          <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
+            Fast Pizza
+          </h5>
+        </a>
+
+        <!-- 3rd proj -->
+
+        <a href="https://mern-auth-gqwt.onrender.com/" target="_blank"
+          class="group relative animate__animated custom-delay-4">
+          <img src="./public/mern-auth.jpg" alt=""
+            class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50" />
+          <img src="./public/mern-auth.jpg" alt="" class="w-full h-40 object-cover md:hidden" />
+
+          <div
+            class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/4 lg:group-hover:opacity-100">
+            <h2 class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl">
+              Backend Auth
+            </h2>
+
+            <div class="border-b border-gray-200"></div>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              A MERN built authentication app
+            </p>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              stack : ReactJs, NodeJs, ExpressJs, MongoDB
+            </p>
+          </div>
+
+          <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
+            Authenticator
+          </h5>
+        </a>
+
+        <!-- 4th Project -->
+
+        <a href="https://react-quiz-ps.netlify.app/" target="_blank"
+          class="group relative animate__animated custom-delay-4">
+          <img src="./public/react-quiz.jpg" alt=""
+            class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50" />
+          <img src="./public/react-quiz.jpg" alt="" class="w-full h-40 object-cover md:hidden" />
+
+          <div
+            class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/3 lg:group-hover:opacity-100">
+            <h2 class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl">
+              React-quiz
+            </h2>
+
+            <div class="border-b border-gray-200"></div>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              A robust quiz app
+            </p>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              stack : ReactJs,
+            </p>
+          </div>
+
+          <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
+            React-quiz
+          </h5>
+        </a>
+
+        <!-- 5th project -->
+        <a href="https://clipboard-ps.netlify.app/" target="_blank"
+          class="group relative animate__animated custom-delay-4">
+          <img src="./public/clipboard.jpg" alt=""
+            class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50" />
+          <img src="./public/clipboard.jpg" alt="" class="w-full h-40 object-cover md:hidden" />
+
+          <div
+            class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/3 lg:group-hover:opacity-100">
+            <h2 class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl">
+              Clipboard
+            </h2>
+
+            <div class="border-b border-gray-200"></div>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              A beatiful landing page...
+            </p>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              stack : HTML, TailwindCSS, Javascript
+            </p>
+          </div>
+
+          <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
+            Clipboard
+          </h5>
+        </a>
+
+        <!-- 6th proj -->
+
+        <a href="https://loopstudios-ps.netlify.app/" target="_blank"
+          class="group relative animate__animated custom-delay-5">
+          <img src="./public/loopstudios.jpg" alt=""
+            class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50" />
+          <img src="./public/loopstudios.jpg" alt="" class="w-full h-40 object-cover md:hidden" />
+
+          <div
+            class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/3 lg:group-hover:opacity-100">
+            <h2 class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl">
+              LoopStudios
+            </h2>
+
+            <div class="border-b border-gray-200"></div>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              An eye appealing demo of VR
+            </p>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              stack : HTML, TailwindCSS, Javascript
+            </p>
+          </div>
+
+          <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
+            Loopstudios
+          </h5>
+        </a>
+
+        <!-- 5th proj -->
+
+        <a href="https://shortly-ps.netlify.app/" class="group relative animate__animated custom-delay-6"
+          target="_blank">
+          <img src="./public/shortly.jpg" alt=""
+            class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50" />
+          <img src="./public/shortly.jpg" alt="" class="w-full h-40 object-cover md:hidden" />
+
+          <div
+            class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/3 lg:group-hover:opacity-100">
+            <h2 class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl">
+              Shortly
+            </h2>
+
+            <div class="border-b border-gray-200"></div>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              An aesthetic landing page of the brand...
+            </p>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              Stack : HTML, TailwindCSS, Javascript
+            </p>
+          </div>
+
+          <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
+            Shortly
+          </h5>
+        </a>
+
+        <!-- 6th Project -->
+
+        <a href="https://github.com/Sashankps/TaskManager/" target="_blank"
+          class="group relative animate__animated custom-delay-4">
+          <img src="./public/task-manager-app-.jpg" alt=""
+            class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50" />
+          <img src="./public/task-manager-app-.jpg" alt="" class="w-full h-40 object-cover md:hidden" />
+
+          <div
+            class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/4 lg:group-hover:opacity-100">
+            <h2 class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl">
+              TaskManager
+            </h2>
+
+            <div class="border-b border-gray-200"></div>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              Manage your daily and upcoming tasks...
+            </p>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              stack : Asp.Net Core MVC, C#, Sql Server, Bootstrap
+            </p>
+          </div>
+
+          <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
+            Task Manager
+          </h5>
+        </a>
+
+        <!-- 7th Project -->
+
+        <a href="https://github.com/Sashankps/TaskManager/tree/master/ExpenseTracker" target="_blank"
+          class="group relative animate__animated custom-delay-4">
+          <img src="./public/expense-tracker-app-logo-with-expenses.jpg" alt=""
+            class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50" />
+          <img src="./public/expense-tracker-app-logo-with-expenses.jpg" alt=""
+            class="w-full h-40 object-cover md:hidden" />
+
+          <div
+            class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/4 lg:group-hover:opacity-100">
+            <h2 class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl">
+              Expense Tracker
+            </h2>
+
+            <div class="border-b border-gray-200"></div>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              Track your daily expenses
+            </p>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              stack : Asp.Net Core MVC, C#, Sql Server, Bootstrap
+            </p>
+          </div>
+
+          <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
+            Expense Tracker
+          </h5>
+        </a>
+
+        <!-- 8th Project -->
+
+        <a href="https://github.com/Sashankps/node-weather_website/" target="_blank"
+          class="group relative animate__animated custom-delay-4">
+          <img src="./public/weather-app-icon-.jpg" alt=""
+            class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50" />
+          <img src="./public/weather-app-icon-.jpg" alt="" class="w-full h-40 object-cover md:hidden" />
+
+          <div
+            class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/3 lg:group-hover:opacity-100">
+            <h2 class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl">
+              Weather API
+            </h2>
+
+            <div class="border-b border-gray-200"></div>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              Retrieves real time weather forecast
+            </p>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              stack : NodeJs, ExpressJs
+            </p>
+          </div>
+
+          <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
+            Weather API
+          </h5>
+        </a>
+
+        <!-- 9th Project -->
+
+        <a href="https://github.com/Sashankps/redux-bank" target="_blank"
+          class="group relative animate__animated custom-delay-2">
+          <img src="./public/redux-bank.jpg" alt=""
+            class="hidden w-full duration-200 md:block lg:group-hover:scale-110 lg:group-hover:brightness-50" />
+          <img src="./public/redux-bank.jpg" alt="" class="w-full h-40 object-cover md:hidden" />
+
+          <div
+            class="absolute bottom-0 left-0 p-4 rounded shadow pointer-events-none opacity-0 transition-all duration-500 ease-out translate-y-full lg:group-hover:-translate-y-1/4 lg:group-hover:opacity-100">
+            <h2 class="text-2xl font-bold text-yellow-400 mb-2 transition-colors duration-300 p-2 rounded-xl">
+              Virtual Bank
+            </h2>
+
+            <div class="border-b border-gray-200"></div>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              An app that acts as a dispatcher to manage your money in the
+              bank
+            </p>
+
+            <p class="text-sm transition-colors duration-300 delay-150 mt-4">
+              stack : ReactJS, Redux
+            </p>
+          </div>
+
+          <h5 class="creation-h5 lg:group-hover:opacity-0 font-bold">
+            Virtual Bank
+          </h5>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="mt-28 mb-28 backdrop-blur-sm">
+    <div
+      class="text-center mx-auto container mt-40 mb-10 font-bold text-5xl text-green-400 md:mt-20 max-w-6xl px-6 md:px-0 decoration-green-400 decoration-4 animate__animated custom-delay-3">
+      Skills
+    </div>
+    <div class="grid lg:grid-cols-2 container mx-auto max-w-6xl">
+      <div class="flex flex-col">
+        <h2 class="text-2xl text-center font-bold mt-8 text-white animate__animated custom-delay-3">
+          Frontend
+        </h2>
+        <div class="group flex flex-wrap mx-auto justify-center gap-4 py-4 animate__animated">
+          <div
+            class="border border-solid border-blue-500 text-white font-bold rounded-lg p-2 hover:scale-105 cursor-pointer animate__animated custom-delay-4">
+            HTML
+          </div>
+          <div
+            class="border border-solid border-red-500 text-white font-bold rounded-lg px-2 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-4">
+            CSS
+          </div>
+          <div
+            class="border border-solid border-purple-500 text-white font-bold rounded-lg px-2 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-4">
+            Next Js
+          </div>
+          <div
+            class="border border-solid border-purple-500 text-white font-bold rounded-lg px-2 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-4">
+            Angular
+          </div>
+          <div
+            class="border border-solid border-blue-400 text-white font-bold rounded-lg px-2 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-4">
+            React Js
+          </div>
+          <div
+            class="border border-solid border-pink-500 text-white font-bold rounded-lg px-2 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-4">
+            ASP.NET Core MVC
+          </div>
+          <div
+            class="border border-solid border-teal-500 text-white font-bold rounded-lg px-2 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-4">
+            Tailwind
+          </div>
+          <div
+            class="border border-solid border-orange-500 text-white font-bold rounded-lg px-2 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-4">
+            Bootstrap
           </div>
         </div>
       </div>
-    </section>
-
-    <section id="contact" class="md:mb-36 mt-40 mb-24 invisble border-white">
-      <div class="max-w-6xl mx-auto px-6 text-gray-900 md:px-0 space-y-4">
-        <div
-          class="text-center mx-auto container font-bold text-5xl text-green-400 mb-12 md:mt-20 max-w-6xl md:px-0 decoration-4 animate__animated custom-delay-5"
-        >
-          Contact
-        </div>
-        <div
-          class="flex items-center space-x-4 text-white animate__animated custom-delay-6"
-        >
-          <!-- Location SVG -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-6 text-white"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 13l7-7 7 7M5 13v6a2 2 0 002 2h10a2 2 0 002-2v-6M9 22h6"
-            ></path>
-          </svg>
-
-          <span>Hyderabad, India</span>
-        </div>
-        <div
-          class="flex items-center space-x-4 text-white animate__animated custom-delay-7"
-        >
-          <!-- Mail SVG -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6 text-white"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm-1 14l-4-4l-.01-2.55l4 4V16zm4 0h2v-6h-2v6z"
-            ></path>
-          </svg>
-
-          <a2
-            href="mailto:youremail@example.com"
-            class="text-white hover:underline"
-            >sashank.pilli@gmail.com</a2
-          >
-        </div>
-      </div>
-    </section>
-
-    <footer
-      class="bg-gradient-to-r from-slate-950 to-black text-white py-8 border-t border-gray-600"
-    >
-      <div class="container mx-auto">
-        <div class="flex flex-col md:flex-row items-center justify-between">
-          <div class="mb-4 md:mb-0">
-            <h3 class="text-2xl font-semibold">Sashank Pilli</h3>
-            <p class="text-sm">Full Stack Web Developer</p>
+      <div class="flex flex-col">
+        <h2 class="text-2xl font-bold text-center mt-8 text-white animate__animated custom-delay-4">
+          Backend
+        </h2>
+        <div class="flex flex-wrap justify-center gap-4 py-4">
+          <div
+            class="border border-solid border-blue-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5">
+            Java
           </div>
-          <div class="flex space-x-4">
-            <a href="#" class="hover:text-gray-400">Home</a>
-            <a href="#projects" class="hover:text-gray-400">Portfolio</a>
-            <a href="#contact" class="hover:text-gray-400">Contact</a>
+          <div
+            class="border border-solid border-red-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5">
+            C#
+          </div>
+          <div
+            class="border border-solid border-blue-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5">
+            Javascript
+          </div>
+          <div
+            class="border border-solid border-blue-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5">
+            Typescript
+          </div>
+          <div
+            class="border border-solid border-blue-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5">
+            Go
+          </div>
+
+          <div
+            class="border border-solid border-red-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5">
+            Python
+          </div>
+          <div
+            class="border border-solid border-yellow-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5">
+            REST APIs
+          </div>
+          <div
+            class="border border-solid border-purple-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5">
+            Node JS
+          </div>
+          <div
+            class="border border-solid border-green-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-5">
+            Express JS
           </div>
         </div>
-        <div class="mt-4 text-sm text-gray-600 lg:text-left text-center">
-          &copy; 2023
+      </div>
+      <div class="flex flex-col lg:mt-10">
+        <h2 class="text-2xl font-bold text-center mt-8 text-white animate__animated custom-delay-5">
+          Database
+        </h2>
+        <div class="flex flex-wrap justify-center gap-4 py-4">
+          <div
+            class="border border-solid border-blue-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-6">
+            PostgreSQL
+          </div>
+          <div
+            class="border border-solid border-red-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-6">
+            Entity Framework Core
+          </div>
+          <div
+            class="border border-solid border-yellow-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-6">
+            MongoDB
+          </div>
         </div>
       </div>
-    </footer>
+      <div class="flex flex-col lg:mt-10">
+        <h2 class="text-2xl font-bold text-center mt-8 text-white animate__animated custom-delay-5">
+          Others
+        </h2>
+        <div class="flex flex-wrap justify-center gap-4 py-4">
+          <div
+            class="border border-solid border-blue-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-6">
+            Azure
+          </div>
+          <div
+            class="border border-solid border-red-500 text-white font-bold rounded-lg px-3 py-2 hover:scale-105 cursor-pointer animate__animated custom-delay-6">
+            Docker
+          </div>
 
-    <script src="./script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-  </body>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="md:mb-36 mt-40 mb-24 invisble border-white">
+    <div class="max-w-6xl mx-auto px-6 text-gray-900 md:px-0 space-y-4">
+      <div
+        class="text-center mx-auto container font-bold text-5xl text-green-400 mb-12 md:mt-20 max-w-6xl md:px-0 decoration-4 animate__animated custom-delay-5">
+        Contact
+      </div>
+      <div class="flex items-center space-x-4 text-white animate__animated custom-delay-6">
+        <!-- Location SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-white" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M5 13l7-7 7 7M5 13v6a2 2 0 002 2h10a2 2 0 002-2v-6M9 22h6"></path>
+        </svg>
+
+        <span>Hyderabad, India</span>
+      </div>
+      <div class="flex items-center space-x-4 text-white animate__animated custom-delay-7">
+        <!-- Mail SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm-1 14l-4-4l-.01-2.55l4 4V16zm4 0h2v-6h-2v6z">
+          </path>
+        </svg>
+
+        <a2 href="mailto:youremail@example.com" class="text-white hover:underline">sashank.pilli@gmail.com</a2>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gradient-to-r from-slate-950 to-black text-white py-8 border-t border-gray-600">
+    <div class="container mx-auto">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="mb-4 md:mb-0">
+          <h3 class="text-2xl font-semibold">Sashank Pilli</h3>
+          <p class="text-sm">Full Stack Web Developer</p>
+        </div>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:text-gray-400">Home</a>
+          <a href="#projects" class="hover:text-gray-400">Portfolio</a>
+          <a href="#contact" class="hover:text-gray-400">Contact</a>
+        </div>
+      </div>
+      <div class="mt-4 text-sm text-gray-600 lg:text-left text-center">
+        &copy; 2023
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</body>
+
 </html>
